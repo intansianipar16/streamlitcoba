@@ -8,7 +8,7 @@ unit = st.selectbox("Convert from", ["Celsius", "Fahrenheit"])
 
 if st.button("Convert"):
     response = requests.post(
-        "http://localhost:5000/convert",
+        "https://f62e-103-82-14-56.ngrok-free.app/convert",
         json={"temperature": temperature, "unit": unit}
     )
     
